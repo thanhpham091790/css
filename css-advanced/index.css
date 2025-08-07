@@ -1,0 +1,18 @@
+#css-rounded-corner .rcorners {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  background-color: #73AD21;
+}
+#css-rounded-corner #rcorners1 {
+  border-radius: 15px 50px 30px 5px;
+}
+#css-rounded-corner #rcorners2 {
+  border-radius: 15px 50px 30px;
+}
+#css-rounded-corner #rcorners3 {
+  border-radius: 15px 50px;
+}
+#css-rounded-corner #rcorners4 {
+  border-radius: 15px;
+}/*# sourceMappingURL=index.css.map */
