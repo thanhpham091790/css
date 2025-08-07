@@ -1,3 +1,70 @@
+#css-gradients .grad {
+  height: 100px;
+  background-color: red;
+}
+#css-gradients #grad1 {
+  background-image: linear-gradient(to bottom, red, yellow);
+}
+#css-gradients #grad2 {
+  background-image: linear-gradient(to left, red, yellow);
+}
+#css-gradients #grad3 {
+  background-image: linear-gradient(to top, red, yellow);
+}
+#css-gradients #grad4 {
+  background-image: linear-gradient(to right, red, yellow);
+}
+#css-gradients #grad5 {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+#css-gradients #grad6 {
+  background-image: linear-gradient(to bottom left, red, yellow);
+}
+#css-gradients #grad7 {
+  background-image: linear-gradient(to top left, red, yellow);
+}
+#css-gradients #grad8 {
+  background-image: linear-gradient(to top right, red, yellow);
+}
+#css-gradients #grad9 {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0));
+}
+#css-gradients #grad10 {
+  background-image: linear-gradient(to bottom, red, green, yellow);
+}
+
+#css-backgrounds #example1 {
+  background-image: url("assets/css-backgrounds/img_flwr.gif"), url("assets/css-backgrounds/paper.gif");
+  background-position: right bottom, top left;
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+  background-origin: content-box;
+  background-clip: border-box;
+  padding: 15px;
+  border: 15px solid #ccc;
+}
+
+#css-border-images .borderimg {
+  border: 10px solid transparent;
+  padding: 15px;
+}
+#css-border-images #borderimg1 {
+  -o-border-image: url("assets/css-border-images/border.png") 50 round;
+     border-image: url("assets/css-border-images/border.png") 50 round;
+}
+#css-border-images #borderimg2 {
+  -o-border-image: url("assets/css-border-images/border.png") 20% round;
+     border-image: url("assets/css-border-images/border.png") 20% round;
+}
+#css-border-images #borderimg3 {
+  -o-border-image: url("assets/css-border-images/border.png") 30% round;
+     border-image: url("assets/css-border-images/border.png") 30% round;
+}
+#css-border-images #borderimg4 {
+  -o-border-image: url("assets/css-border-images/border.png") 30 stretch;
+     border-image: url("assets/css-border-images/border.png") 30 stretch;
+}
+
 #css-rounded-corner .rcorners {
   width: 200px;
   height: 150px;

@@ -1,3 +1,92 @@
+// CSS Gradients
+#css-gradients {
+    .grad {
+        height: 100px;
+        background-color: red;
+    }
+
+    #grad1 {
+        background-image: linear-gradient(to bottom, red, yellow);
+    }
+
+    #grad2 {
+        background-image: linear-gradient(to left, red, yellow);
+    }
+
+    #grad3 {
+        background-image: linear-gradient(to top, red, yellow);
+    }
+
+    #grad4 {
+        background-image: linear-gradient(to right, red, yellow);
+    }
+
+    #grad5 {
+        background-image: linear-gradient(to bottom right, red, yellow);
+    }
+
+    #grad6 {
+        background-image: linear-gradient(to bottom left, red, yellow);
+    }
+
+    #grad7 {
+        background-image: linear-gradient(to top left, red, yellow);
+    }
+
+    #grad8 {
+        background-image: linear-gradient(to top right, red, yellow);
+    }
+
+    #grad9 {
+        background-image: -moz-linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+    }
+
+    #grad10 {
+        background-image: linear-gradient(to bottom, red, green, yellow);
+    }
+}
+
+// CSS Backgrounds
+#css-backgrounds {
+    #example1 {
+        background-image: url('assets/css-backgrounds/img_flwr.gif'), url('assets/css-backgrounds/paper.gif');
+        background-position: right bottom, top left;
+        background-repeat: no-repeat, repeat;
+        background-size: contain;
+        background-origin: content-box;
+        background-clip: border-box;
+        padding: 15px;
+        border: 15px solid #ccc;
+    }
+}
+
+// CSS Border Images
+#css-border-images {
+    .borderimg {
+        border: 10px solid transparent;
+        padding: 15px;
+    }
+
+    #borderimg1 {
+        border-image: url('assets/css-border-images/border.png') 50 round;
+    }
+
+    #borderimg2 {
+        border-image: url('assets/css-border-images/border.png') 20% round;
+    }
+
+    #borderimg3 {
+        border-image: url('assets/css-border-images/border.png') 30% round;
+    }
+
+    #borderimg4 {
+        border-image: url('assets/css-border-images/border.png') 30 stretch;
+    }
+}
+
+
+// CSS Rounded Corners
 #css-rounded-corner {
     .rcorners {
         width: 200px;
