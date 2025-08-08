@@ -1,3 +1,63 @@
+// CSS Shadows
+#css-shadows {
+    .text {
+        font-size: 32px;
+    }
+
+    #shadow1 {
+        text-shadow: 2px 2px;
+    }
+
+    #shadow2 {
+        text-shadow: 2px 2px red;
+    }
+
+    #shadow3 {
+        text-shadow: 2px 2px 5px red;
+    }
+
+    #shadow4 {
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    #shadow5 {
+        text-shadow: 0 0 5px red;
+    }
+
+    #shadow6 {
+        text-shadow: 0 0 5px red, 0 0 5px yellow;
+    }
+
+    #shadow7 {
+        color: white;
+        text-shadow: 1px 1px 5px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    #shadow8 {
+        color: white;
+        text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+    }
+
+    .text-card,
+    .image-card {
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .text-card .header {
+        color: white;
+        background-color: #4CAF50;
+        font-size: 40px;
+        padding: 10px;
+    }
+}
+
 // CSS Gradients
 #css-gradients {
     .grad {
