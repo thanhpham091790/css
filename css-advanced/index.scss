@@ -1,3 +1,19 @@
+// CSS Transition
+#css-transitions {
+    .transition {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s ease-in-out 1s, height 2s ease-in-out 1s, transform 2s ease-in-out 1s;
+    }
+
+    .transition:hover {
+        width: 200px;
+        height: 200px;
+        transform: rotate(180deg);
+    }
+}
+
 // CSS 2D Transforms
 #css-2d-transforms {
     .original {
