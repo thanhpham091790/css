@@ -1,3 +1,22 @@
+#css-image-shapes .shape-outside .container {
+  border: 1px solid green;
+  padding: 10px;
+}
+#css-image-shapes .shape-outside #shape-outside-1 {
+  clip-path: circle(40%);
+  shape-outside: circle(50%);
+  float: left;
+}
+#css-image-shapes .clip-path #circle1 {
+  clip-path: circle(50%);
+}
+#css-image-shapes .clip-path #circle2 {
+  clip-path: circle(40%);
+}
+#css-image-shapes .clip-path #circle3 {
+  clip-path: circle(60%);
+}
+
 #css-image-filters .drop-shadow #drop-shadow-1 {
   filter: drop-shadow(8px 8px 10px gray);
 }
