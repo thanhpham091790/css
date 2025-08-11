@@ -1,3 +1,277 @@
+#css-image-styling .image-modal #myImg {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+#css-image-styling .image-modal #myImg:hover {
+  cursor: pointer;
+  box-shadow: 0 0 4px 2px #ccc;
+}
+#css-image-styling .image-modal .modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  display: none;
+}
+#css-image-styling .image-modal .modal .close {
+  display: inline-block;
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: all 0.5s ease;
+}
+#css-image-styling .image-modal .modal .close:hover {
+  cursor: pointer;
+  font-size: 40px;
+}
+#css-image-styling .image-modal .modal .modal-content {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#css-image-styling .image-modal .modal #caption {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: calc(50% + 210px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+#css-image-styling .responsive-image-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+#css-image-styling .responsive-image-gallery .responsive {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+#css-image-styling .responsive-image-gallery .gallery:hover {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+#css-image-styling .responsive-image-gallery .gallery {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+#css-image-styling .responsive-image-gallery .desc {
+  padding: 20px 40px;
+  text-align: center;
+}
+#css-image-styling .responsive-image-gallery img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 500px) {
+  #css-image-styling .responsive-image-gallery .responsive {
+    flex-basis: 49%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #css-image-styling .responsive-image-gallery .responsive {
+    flex-basis: 24%;
+  }
+}
+#css-image-styling .image-hover-overlay {
+  position: relative;
+  width: 400px;
+}
+#css-image-styling .image-hover-overlay img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+#css-image-styling .fadein-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #008CBA;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+#css-image-styling .fadein-overlay:hover .overlay {
+  opacity: 1;
+}
+#css-image-styling .fadein-box .overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+#css-image-styling .fadein-box:hover .overlay {
+  opacity: 1;
+}
+#css-image-styling .fadein-box:hover img {
+  opacity: 0.5;
+}
+#css-image-styling .slidein-top .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #008CBA;
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+#css-image-styling .slidein-top:hover .overlay {
+  height: 100%;
+}
+#css-image-styling .slidein-bottom .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #008CBA;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+#css-image-styling .slidein-bottom:hover .overlay {
+  height: 100%;
+}
+#css-image-styling .slidein-left .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #008CBA;
+  color: white;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+#css-image-styling .slidein-left:hover .overlay {
+  width: 100%;
+}
+#css-image-styling .slidein-right .overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #008CBA;
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+#css-image-styling .slidein-right:hover .overlay {
+  width: 100%;
+}
+#css-image-styling .image-text {
+  position: relative;
+}
+#css-image-styling .image-text img {
+  width: 100%;
+  height: auto;
+  opacity: 0.75;
+}
+#css-image-styling .image-text .top-left,
+#css-image-styling .image-text .top-right,
+#css-image-styling .image-text .bottom-left,
+#css-image-styling .image-text .bottom-right,
+#css-image-styling .image-text .center {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+}
+#css-image-styling .image-text .top-left {
+  top: 10px;
+  left: 10px;
+}
+#css-image-styling .image-text .top-right {
+  top: 10px;
+  right: 10px;
+}
+#css-image-styling .image-text .bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+#css-image-styling .image-text .bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+#css-image-styling .image-text .center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#css-image-styling .thumbnail {
+  width: 150px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+#css-image-styling .thumbnail:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 140, 186, 0.5);
+}
+#css-image-styling .responsive {
+  max-width: 100%;
+  height: auto;
+}
+#css-image-styling .card {
+  max-width: 500px;
+  width: 100%;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+#css-image-styling .card .card-image {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+}
+#css-image-styling .card .card-text {
+  padding: 30px;
+}
+#css-image-styling .card .card-text p {
+  margin: 0;
+}
+
 #css-tooltips .top,
 #css-tooltips .right,
 #css-tooltips .bottom,

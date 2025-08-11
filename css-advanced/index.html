@@ -6,9 +6,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Advanced</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
 </head>
 
 <body>
+
+    <!-- CSS Image Styling -->
+    <section id="css-image-styling">
+
+        <h2>Image Modal</h2>
+
+        <p>Here, we use CSS to create a modal (dialog box) that is hidden by default.</p>
+        <p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked
+            on. Also
+            note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
+        <p>Don't worry if you do not understand the code right away. When you are done with CSS, go to our JavaScript
+            Tutorial
+            to learn more.</p>
+
+        <div class="image-modal">
+            <!-- The thumbnail image -->
+            <img id="myImg" src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights, Norway" />
+
+            <!-- The modal -->
+            <div id="myModal" class="modal"></div>
+        </div>
+
+
+
+        <h2>Responsive Image Gallery</h2>
+
+        <h4>Resize the browser window to see the effect.</h4>
+
+        <div class="responsive-image-gallery">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_5terre.jpg">
+                        <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="600"
+                            height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                        <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_lights.jpg">
+                        <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600"
+                            height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_mountains.jpg">
+                        <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" width="600"
+                            height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div style="padding:6px;">
+            <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger
+                than 700px
+                wide, it will show four images side by side, for screens smaller than 700px, it will show two images
+                side by
+                side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+            <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+        </div>
+
+        <h2>Fade in Overlay</h2>
+
+        <div class="image-hover-overlay fadein-overlay">
+            <img src="https://www.w3schools.com/css/img_avatar.png" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </div>
+        <h2>Fade in a box</h2>
+
+        <div class="image-hover-overlay fadein-box">
+            <img src="https://www.w3schools.com/css/img_avatar.png" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </div>
+        <h2>Slide in (top)</h2>
+
+        <div class="image-hover-overlay slidein-top">
+            <img src="https://www.w3schools.com/css/img_avatar.png" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </div>
+        <h2>Slide in (bottom)</h2>
+
+        <div class="image-hover-overlay slidein-bottom">
+            <img src="https://www.w3schools.com/css/img_avatar.png" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </div>
+        <h2>Slide in (left)</h2>
+
+        <div class="image-hover-overlay slidein-left">
+            <img src="https://www.w3schools.com/css/img_avatar.png" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </div>
+        <h2>Slide in (right)</h2>
+
+        <div class="image-hover-overlay slidein-right">
+            <img src="https://www.w3schools.com/css/img_avatar.png" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </div>
+
+        <h2>Image Text</h2>
+
+        <p>Add some text to an image in the top left corner:</p>
+
+        <div class="image-text">
+            <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+            <div class="top-left">Top Left</div>
+            <div class="top-right">Top Right</div>
+            <div class="bottom-left">Bottom Left</div>
+            <div class="bottom-right">Bottom Right</div>
+            <div class="center">Center</div>
+        </div>
+
+        <h2>Thumbnail Image as Link</h2>
+
+        <p>Use the border property to create thumbnail images. Wrap an anchor around the image to use it as a link.</p>
+        <p>Hover over the image and click on it to see the effect.</p>
+
+        <a target="_blank" href="https://www.w3schools.com/css/paris.jpg" rel="noopener">
+            <img class="thumbnail" src="https://www.w3schools.com/css/paris.jpg" alt="Paris">
+        </a>
+
+        <h2>Responsive Image</h2>
+
+        <p>Responsive images will automatically adjust to fit the size of the screen.</p>
+        <p>Resize the browser window to see the effect:</p>
+
+        <img class="responsive" src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Cinque Terre" width="1000"
+            height="300">
+
+        <h2>Responsive Polaroid Images / Cards</h2>
+
+        <div class="card">
+            <img class="card-image" src="https://www.w3schools.com/css/img_5terre.jpg" alt="5 Terre">
+            <div class="card-text">
+                <p>Cinque Terre</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-image" src="https://www.w3schools.com/css/lights600x400.jpg" alt="Norther Lights">
+            <div class="card-text">
+                <p>Northern Lights</p>
+            </div>
+        </div>
+    </section>
 
     <!-- CSS Tooltips -->
     <section id="css-tooltips">
