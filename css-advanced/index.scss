@@ -1,3 +1,46 @@
+// CSS Image Filters
+#css-image-filters {
+    .drop-shadow {
+        #drop-shadow-1 {
+            filter: drop-shadow(8px 8px 10px gray);
+        }
+
+        #drop-shadow-2 {
+            filter: drop-shadow(10px 10px 7px lightblue);
+        }
+    }
+
+    .contrast {
+        #contrast1 {
+            filter: contrast(150%);
+        }
+
+        #contrast2 {
+            filter: contrast(50%);
+        }
+    }
+
+    .brightness {
+        #brightness1 {
+            filter: brightness(150%);
+        }
+
+        #brightness2 {
+            filter: brightness(50%);
+        }
+    }
+
+    .blur {
+        #blur1 {
+            filter: blur(2px);
+        }
+
+        #blur2 {
+            filter: blur(6px);
+        }
+    }
+}
+
 // CSS Image Centering
 #css-image-centering {
     .flex-horizontal-center-container {

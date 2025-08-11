@@ -1,3 +1,28 @@
+#css-image-filters .drop-shadow #drop-shadow-1 {
+  filter: drop-shadow(8px 8px 10px gray);
+}
+#css-image-filters .drop-shadow #drop-shadow-2 {
+  filter: drop-shadow(10px 10px 7px lightblue);
+}
+#css-image-filters .contrast #contrast1 {
+  filter: contrast(150%);
+}
+#css-image-filters .contrast #contrast2 {
+  filter: contrast(50%);
+}
+#css-image-filters .brightness #brightness1 {
+  filter: brightness(150%);
+}
+#css-image-filters .brightness #brightness2 {
+  filter: brightness(50%);
+}
+#css-image-filters .blur #blur1 {
+  filter: blur(2px);
+}
+#css-image-filters .blur #blur2 {
+  filter: blur(6px);
+}
+
 #css-image-centering .flex-horizontal-center-container {
   display: flex;
   justify-content: center;
