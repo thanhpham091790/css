@@ -1,3 +1,20 @@
+#css-image-centering .flex-horizontal-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#css-image-centering .margin-horizontal-center {
+  display: block;
+  margin: 0 auto;
+}
+#css-image-centering .flex-vertical-center-container {
+  height: 600px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #css-image-styling .image-modal #myImg {
   width: 200px;
   height: auto;
