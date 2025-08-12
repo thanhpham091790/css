@@ -1,3 +1,18 @@
+// CSS Mask
+#css-mask {
+    .linear-gradient-as-mask {
+        mask-image: linear-gradient(black, transparent);
+        -webkit-mask-image: linear-gradient(black, transparent);
+    }
+
+    .image-as-mask {
+        mask-image: url('./assets/css-mask/w3logo.png');
+        -webkit-mask-image: url('./assets/css-mask/w3logo.png');
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+    }
+}
+
 // CSS object-fit
 #css-object-fit {
     .fill {

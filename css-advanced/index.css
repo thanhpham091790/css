@@ -1,3 +1,14 @@
+#css-mask .linear-gradient-as-mask {
+  mask-image: linear-gradient(black, transparent);
+  -webkit-mask-image: linear-gradient(black, transparent);
+}
+#css-mask .image-as-mask {
+  mask-image: url("./assets/css-mask/w3logo.png");
+  -webkit-mask-image: url("./assets/css-mask/w3logo.png");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
 #css-object-fit .fill {
   -o-object-fit: fill;
      object-fit: fill;
