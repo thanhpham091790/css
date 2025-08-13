@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'i1'
+        'i2'
+        'i3'
+        'i4'
+        'i5';
+    gap: 10px;
+}
+
+.item1 {
+    grid-area: i1;
+    background-color: #800080;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item2 {
+    grid-area: i2;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        background-color: #33b5e5;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+.item3 {
+    grid-area: i3;
+    padding: 10px;
+}
+
+.item4 {
+    grid-area: i4;
+    border: 2px solid #33b5e5;
+    padding: 10px;
+}
+
+.item5 {
+    grid-area: i5;
+    background-color: #33b5e5;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            'i1 i1 i1 i1 i1 i1'
+            'i2 i3 i3 i3 i3 i3'
+            'i4 i4 i4 i4 i4 i4'
+            'i5 i5 i5 i5 i5 i5';
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .grid-container {
+        grid-template-areas:
+            'i1 i1 i1 i1 i1 i1 i1'
+            'i2 i3 i3 i3 i3 i4 i4'
+            'i5 i5 i5 i5 i5 i5 i5';
+    }
+}
